@@ -12,7 +12,7 @@ public class OrderServiceV3 {
     private final OrderRepositoryV3 orderRepository;
     private final LogTrace trace;
 
-    public void orderItem(String itemId, TraceId traceId) {
+    public void orderItem(String itemId) {
         TraceStatus status = null;
 
         try {

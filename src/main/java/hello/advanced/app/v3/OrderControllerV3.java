@@ -20,7 +20,7 @@ public class OrderControllerV3 {
         try {
             status = trace.begin("OrderControllerV1.request()");
 
-            orderService.orderItem(itemId, status.getTraceId());
+            orderService.orderItem(itemId);
             trace.end(status);
             return "ok";
         } catch (IllegalArgumentException e) {
